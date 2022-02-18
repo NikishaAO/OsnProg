@@ -1,0 +1,14 @@
+﻿<Window x:Class="Lab01.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab01"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <Grid Background="#FF29185F">
+        <Label Content="Нікіша Андрій Олександрович&#xD;&#xA;КП-11&#xD;&#xA;2022" HorizontalAlignment="Center" Height="161" VerticalAlignment="Center" Width="544" Background="White" FontSize="36"/>
+        <Button x:Name="ToMW" Content="To Main Window" HorizontalAlignment="Left" Height="74" Margin="569,321,0,0" VerticalAlignment="Top" Width="145" Click="ToMW_Click"/>
+
+    </Grid>
+</Window>
