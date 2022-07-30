@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lab01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF991D1D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="751*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="536,306,0,0" VerticalAlignment="Top" Height="63" Width="164" Click="Button_Click"/>
+        <Label Content="Головна сторінка" Grid.Column="1" HorizontalAlignment="Left" Margin="476,23,0,0" VerticalAlignment="Top" Height="108" Width="315" FontSize="24" FontWeight="Bold" Background="{x:Null}" Foreground="White"/>
+        <Button x:Name="NewWindow1" Grid.Column="1" Content="To Window3&#xD;&#xA;(Calculator)" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="62" Width="138" Click="NewButton1_Click"/>
+        <Button x:Name="ToLabel" Grid.Column="1" Content="ToWindow4(Label)" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" Height="64" Width="138" Click="ToLabel_Click"/>
+        <Button x:Name="Window2" Grid.Column="1" Content="To Window2 (TIc Tac Toe)" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" Height="62" Width="138" Click="Window2_Click"/>
+        <Button x:Name="ToSB" Grid.Column="1" Content="ToWindow1(Database)" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Height="62" Width="138" Click="ToSB_Click"/>
+
+    </Grid>
+</Window>
