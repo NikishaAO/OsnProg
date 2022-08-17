@@ -1,0 +1,16 @@
+﻿<Window x:Class="ConnectToSQLServer.MembersList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectToSQLServer"
+        mc:Ignorable="d"
+        Title="MembersList" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="MembersList1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,45,246"/>
+        <ComboBox x:Name="CB" HorizontalAlignment="Left" Margin="378,217,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CB_SelectionChanged"/>
+        <DataGrid x:Name="MembersComissions" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,193,443,94"/>
+        <Button x:Name="HomeButton" Content="Back" HorizontalAlignment="Left" Margin="674,361,0,0" VerticalAlignment="Top" Height="43" Width="81" Click="HomeButton_Click"/>
+
+    </Grid>
+</Window>

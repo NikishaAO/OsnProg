@@ -1,0 +1,20 @@
+﻿<Window x:Class="ConnectToSQLServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectToSQLServer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="337*"/>
+            <RowDefinition Height="97*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ComissionManager" Content="Список комісій" HorizontalAlignment="Left" Margin="42,134,0,0" VerticalAlignment="Top" Height="59" Width="122" Click="ComissionManager_Click"/>
+        <Button x:Name="ToMembers" Content="Список депутатів" HorizontalAlignment="Left" Margin="42,242,0,0" VerticalAlignment="Top" Click="ToMembers_Click" Height="59" Width="122"/>
+        <Button Content="Зустрічі" HorizontalAlignment="Left" Margin="42,10,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Row="1" Height="48" Width="122"/>
+        <Button x:Name="CloseButton" Content="Закрити" HorizontalAlignment="Left" Margin="653,34,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="82" Background="#FFF35858"/>
+
+    </Grid>
+</Window>
