@@ -1,0 +1,20 @@
+﻿<Window x:Class="ConnectToSQLServer.AddNewComissionMember"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectToSQLServer"
+        mc:Ignorable="d"
+        Title="AddNewComissionMember" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="CBMembers" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="180" Height="29"/>
+        <ComboBox x:Name="CBComissions" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Width="180" Height="28"/>
+        <Button x:Name="AddButton" Content="Додати" HorizontalAlignment="Center" Margin="0,319,0,0" VerticalAlignment="Top" Height="42" Width="106" Click="AddButton_Click"/>
+        <Button x:Name="BackButton" Content="Назад" HorizontalAlignment="Left" Margin="652,319,0,0" VerticalAlignment="Top" Height="42" Width="87" Click="BackButton_Click"/>
+        <Label Content="Член ради:" HorizontalAlignment="Left" Margin="218,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Комісія:" HorizontalAlignment="Left" Margin="227,0,0,0" VerticalAlignment="Center"/>
+        <DatePicker x:Name="AddDate" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top"/>
+        <Label Content="Додати нового члена комісії" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>
