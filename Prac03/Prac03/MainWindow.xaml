@@ -1,0 +1,17 @@
+﻿<Window x:Class="Prac03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Розмежування повноважень користувачів на основі парольної автентифікації" HorizontalAlignment="Center" Margin="0,127,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="ToUserMode" Content="Режим користувача" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" Height="31" Width="149" Click="ToUserMode_Click"/>
+        <Button x:Name="ToAbout" Content="Про розробника" HorizontalAlignment="Left" Margin="491,197,0,0" VerticalAlignment="Top" Height="31" Width="137" Click="ToAbout_Click"/>
+        <Button x:Name="Exit" Content="Закрити додаток" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Height="31" Width="456" Click="Exit_Click"/>
+        <Button x:Name="ToAdminMode" Content="Режим адміністратора" HorizontalAlignment="Left" Margin="172,197,0,0" VerticalAlignment="Top" Height="31" Width="142" Click="ToAdminMode_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,48 @@
+﻿<Window x:Class="Prac03.AdminMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac03"
+        mc:Ignorable="d"
+        Title="AdminMode" Height="450" Width="800">
+    <Grid>
+        <Label Content="Введіть пароль адміністратора:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="LogInButton" Content="Авторизуватись" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="22" Width="248" FontWeight="Bold" Click="Button_Click"/>
+        <DataGrid x:Name="Data" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,151,542,0"/>
+        <Label Content="Зміна паролю Адміністратора" HorizontalAlignment="Left" Margin="503,13,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.488,-0.334"/>
+        <Button x:Name="UpdateAdminPassword" Content="Оновити" HorizontalAlignment="Left" Margin="700,113,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="UpdateAdminPassword_Click" IsEnabled="False"/>
+        <Label Content="Введіть поточний пароль" HorizontalAlignment="Left" Margin="401,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введіть новий пароль" HorizontalAlignment="Left" Margin="615,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Повторіть пароль" HorizontalAlignment="Left" Margin="410,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Перегляд кожного користувача" HorizontalAlignment="Left" Margin="333,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="334,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="334,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="UserSurnameLabel" Content="" HorizontalAlignment="Left" Margin="490,220,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Логін" HorizontalAlignment="Left" Margin="597,189,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="UserNameLabel1" Content="" HorizontalAlignment="Left" Margin="483,189,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="LoginLabel" Content="" HorizontalAlignment="Left" Margin="663,189,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Статус" HorizontalAlignment="Left" Margin="597,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="StatusLabel" Content="" HorizontalAlignment="Left" Margin="663,220,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="prev" Content="Попередній" HorizontalAlignment="Left" Margin="348,265,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="prev_Click" IsEnabled="False"/>
+        <Button x:Name="next" Content="Наступний" HorizontalAlignment="Left" Margin="678,265,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="next_Click" IsEnabled="False"/>
+        <Label Content="Обмеження на пароль" HorizontalAlignment="Left" Margin="436,262,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="RestrictionLabel" Content="" HorizontalAlignment="Left" Margin="602,262,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Додавання користувача" HorizontalAlignment="Left" Margin="314,293,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NewUserLogin" HorizontalAlignment="Left" Margin="314,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="20"/>
+        <Button x:Name="AddUser" Content="Додати користувача" HorizontalAlignment="Left" Margin="314,361,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="142" Click="AddUser_Click" IsEnabled="False"/>
+        <Button x:Name="ExitFromSystem" Content="Вийти з системи" HorizontalAlignment="Left" Margin="314,390,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="142" Click="ExitFromSystem_Click" IsEnabled="False"/>
+        <Label Content="Користувач" HorizontalAlignment="Left" Margin="537,301,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="UsersLogins" HorizontalAlignment="Left" Margin="623,306,0,0" VerticalAlignment="Top" Width="157"/>
+        <CheckBox x:Name="ChangeActive" Content="Активність" HorizontalAlignment="Left" Margin="546,345,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="ChangeStatus" Content="Встановити активність" HorizontalAlignment="Left" Margin="643,338,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="ChangeStatus_Click" IsEnabled="False"/>
+        <CheckBox x:Name="ChangeRestCheck" Content="Обмеження на пароль" HorizontalAlignment="Left" Margin="546,369,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="ChangeRestriction" Content="Встановити" HorizontalAlignment="Left" Margin="708,366,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.323,-0.103" Click="ChangeRestriction_Click" IsEnabled="False"/>
+        <Button x:Name="BackButton" Content="Закрити вікно" HorizontalAlignment="Left" Margin="546,395,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="234" Click="BackButton_Click"/>
+        <PasswordBox x:Name="AdminPassword" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="248"/>
+        <PasswordBox x:Name="CurrentAdminPassword" HorizontalAlignment="Left" Margin="402,77,0,0" VerticalAlignment="Top" Width="149"/>
+        <PasswordBox x:Name="NewAdminPassword" HorizontalAlignment="Left" Margin="606,77,0,0" VerticalAlignment="Top" Width="149"/>
+        <PasswordBox x:Name="NewAdminPassword2" HorizontalAlignment="Left" Margin="537,115,0,0" VerticalAlignment="Top" Width="149"/>
+
+    </Grid>
+</Window>
