@@ -1,0 +1,38 @@
+﻿<Window x:Class="Prac01.CheckMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac01"
+        mc:Ignorable="d"
+        Title="CheckMode" Height="450" Width="800">
+    <Grid Background="#FF17BA3F">
+        <Label Content="РЕЖИМ ПЕРЕВІРКИ" HorizontalAlignment="Center" Margin="0,53,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left" Margin="54,128,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="длагнитор" HorizontalAlignment="Left" Margin="210,128,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FFC60303"/>
+        <Label Content="К-сть спроб:" HorizontalAlignment="Left" Margin="54,170,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Alpha:" HorizontalAlignment="Left" Margin="251,170,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Кількість введених символів:" HorizontalAlignment="Left" Margin="54,212,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="CharCount" Content="0" HorizontalAlignment="Left" Margin="358,212,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="EnterField" HorizontalAlignment="Left" Margin="54,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="20" TextChanged="EnterField_TextChanged"/>
+        <Button x:Name="BackButton" Content="Вийти" HorizontalAlignment="Left" Margin="77,360,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Height="40" Width="131" Click="BackButton_Click"/>
+        <Label Content="Статистичний аналіз" HorizontalAlignment="Left" Margin="474,128,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Дисперсії вибірок" HorizontalAlignment="Left" Margin="435,172,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Р ідентифікації:" HorizontalAlignment="Left" Margin="435,214,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Помилка 1-го роду:" HorizontalAlignment="Left" Margin="435,256,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Помилка 2-го роду:" HorizontalAlignment="Left" Margin="435,293,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="r1mLabel" Content="0" HorizontalAlignment="Left" Margin="651,258,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="r2mLabel" Content="0" HorizontalAlignment="Left" Margin="651,300,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="PLabel" Content="0" HorizontalAlignment="Left" Margin="651,214,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="DispTypeLabel" Content="---" HorizontalAlignment="Left" Margin="651,172,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <ComboBox x:Name="Tries" HorizontalAlignment="Left" Margin="185,172,0,0" VerticalAlignment="Top" Width="61" FontSize="20" SelectionChanged="Tries_SelectionChanged">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="Alpha" HorizontalAlignment="Left" Margin="326,170,0,0" VerticalAlignment="Top" Width="61" FontSize="20" RenderTransformOrigin="0.482,0.148"/>
+
+    </Grid>
+</Window>

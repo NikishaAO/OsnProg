@@ -1,0 +1,31 @@
+﻿<Window x:Class="Prac01.StudyMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac01"
+        mc:Ignorable="d"
+        Title="StudyMode" Height="450" Width="800">
+    <Grid Background="#FF43C4C9">
+        <Label Content="РЕЖИМ НАВЧАННЯ" HorizontalAlignment="Center" Margin="0,53,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left" Margin="229,113,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="длагнитор" HorizontalAlignment="Left" Margin="400,113,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF9F00AE" BorderBrush="Black" FontWeight="Bold" RenderTransformOrigin="0.415,0.604"/>
+        <Label Content="Кількість введених символів:" HorizontalAlignment="Left" Margin="197,150,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="CharCount" Content="0" HorizontalAlignment="Left" Margin="493,150,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="EnterField" HorizontalAlignment="Left" Margin="361,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="190" Height="23" FontSize="20" TextChanged="EnterField_TextChanged" GotKeyboardFocus="EnterField_GotKeyboardFocus"/>
+        <Label Content="Поле введення:" HorizontalAlignment="Left" Margin="197,0,0,0" VerticalAlignment="Center" FontSize="20"/>
+        <Label Content="Кількість спроб:" HorizontalAlignment="Left" Margin="245,258,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox x:Name="TriesList" HorizontalAlignment="Left" Margin="428,263,0,0" VerticalAlignment="Top" Width="56" Height="32" FontSize="20" RenderTransformOrigin="0.557,-0.206" SelectionChanged="TriesList_SelectionChanged">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <Button x:Name="BackButton" Content="Вийти" HorizontalAlignment="Center" Margin="0,335,0,0" Height="36" VerticalAlignment="Top" Width="140" FontSize="20" Click="BackButton_Click"/>
+        <Button x:Name="ClearButton" Content="Знову" HorizontalAlignment="Left" Margin="579,0,0,0" VerticalAlignment="Center" Height="33" Width="82" FontSize="20" Click="ClearButton_Click"/>
+        <Label x:Name="CheckLabel" Content="" HorizontalAlignment="Left" Margin="562,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ilabel" Content="Label" HorizontalAlignment="Left" Margin="126,92,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
